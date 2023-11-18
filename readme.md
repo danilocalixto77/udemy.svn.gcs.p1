@@ -24,6 +24,24 @@
 ## Seção 3: Instalação
 
   - 06 - Instalação do Linux no Windows 10
+    > 1 - Habilitar **Windows Subsystem for Linux** 
+      - Executar PowerShell como administrador:
+        ```
+        Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-Linux
+        ```
+
+    > 2 - Instalar uma distribuição Linux(Ubuntu)
+      - Pesquisa na Microsoft Store pela distribuição Linux do Ubuntu. 
+      - Fazer download.
+      - Abrir e o windows se encarregará de fazer a instalação.
+      - Criar um usuário: nome_do_usuario
+      - Criar senha, e em seguida confirmar senha digitada.
+      - Atualizar versão do sistema, no prompt do Ubunto digite o comando abaixo, sem seguida irá lhe pedir o password do usuário:
+        ```
+        sudo apt update && sudo apt upgrade -y        
+
+        ```
+
 
   - 07 - Instalação do Subversion
 
