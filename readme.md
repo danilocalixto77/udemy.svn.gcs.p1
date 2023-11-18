@@ -30,7 +30,7 @@
         Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-Linux
         ```
 
-    > 2 - Instalar uma distribuição Linux(Ubuntu)
+    > 2 - Instalar uma distribuição **Linux(Ubuntu)**
       - Pesquisa na Microsoft Store pela distribuição Linux do Ubuntu. 
       - Fazer download.
       - Abrir e o windows se encarregará de fazer a instalação.
@@ -41,9 +41,32 @@
         sudo apt update && sudo apt upgrade -y        
 
         ```
+      - Diretório de arquivo de usuários do windows acessando pelo linux é:
+        ```
+        cd /mnt/c/users/usuario
 
+        ```
 
   - 07 - Instalação do Subversion
+    > Instalação no **Linux(Ubuntu)**
+
+      - Digite o comando abaixo seguido da senha do seu usuário:
+        ```
+        sudo apt-get install subversion kdiff3      
+        ```    
+      - Para confirmar a instalação digite:
+        ```
+        svn --version
+        ```    
+ 
+    > Instalação no Windows
+      - A melhor auternativa é baixar o TortoiseSVN. Neles será instalado a interface gráfica e também o bash para linha de comamdo.            
+      - Para download acesse: https://tortoisesvn.net/downloads.html, após download concluído execute o arquivo e siga confirmando: 
+      > Na tela: **Custom Setup**
+      
+      > Habilite: **command line client tools**
+
+
 
 ## Seção 4: Operações Básicas de Controle de Versão com Subversion
 
