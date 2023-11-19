@@ -44,7 +44,6 @@
       - Diretório de arquivo de usuários do windows acessando pelo linux é:
         ```
         cd /mnt/c/users/usuario
-
         ```
 
   - 07 - Instalação do Subversion
@@ -139,12 +138,19 @@
       svn update
       ```
 
-
   - 09 - Operações Básicas de Controle de Versão com Subversion pelo TortoiseSVN
+    > Aula utilizando a interface gráfica do TortoiseSVN.
 
 ## Seção 5: Ignorando Arquivos
 
   - 10 - Por que alguns arquivos devem ser ignorados?
+    > Arquivos que devem ser ignorados:
+      1. Arquivos secundários
+      2. Configurações particulares
+      3. Bancos de dados
+      4. Aplicativos e utilitários
+      5. Submódulos de terceiros
+      
   
   - Teste 4: Recapitulando
 
