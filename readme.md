@@ -162,13 +162,23 @@
       svn propdel
       svn propedit
       ```
-
   
   - 12 - Ignorando Arquivos pelo TortoiseSVN
 
 ## Seção 6: Revertendo Alterações
 
   - 13 - Revertendo Alterações pelo Subversion
+    > Comandos de reversão por arquivo:
+      ```
+      svn revert nomearquivo1.txt nome arquivo2.txt nomeraquivo3.txt
+
+      svn revert nomearquivounicosomente.txt 
+      ```
+
+    > Comandos de reversão geral:
+      ```
+      svn revert -R .
+      ```
 
   - 14 - Revertendo Alterações pelo TortoiseSVN
 
