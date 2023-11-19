@@ -150,11 +150,19 @@
       3. Bancos de dados
       4. Aplicativos e utilitários
       5. Submódulos de terceiros
-      
   
   - Teste 4: Recapitulando
 
   - 11 - Ignorando Arquivos pelo Subversion
+    > Os arquivos no SVN são tratados como ignorados a partir de propriedades, segue abaixo lista de comandos:
+      ```
+      svn propset
+      svn proplist
+      svn propget
+      svn propdel
+      svn propedit
+      ```
+
   
   - 12 - Ignorando Arquivos pelo TortoiseSVN
 
