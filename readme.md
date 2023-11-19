@@ -66,11 +66,79 @@
       
       > Habilite: **command line client tools**
 
+      > Ainda é possível verificar a instalação do TortoiseSVN selecionando um local ou pasta para verificar as configurações dos ícones. Por exemplo:
+     
+      > Clique o botão direito do mouse na área de uma pasta/repositório
 
+      > Selecione : TortoiseSVN | Settings | Icon Set
+
+      > Escolha o estilo de ícones desejados para pastas e arquivos.
 
 ## Seção 4: Operações Básicas de Controle de Versão com Subversion
 
   - 08 - Operações Básicas de Controle de Versão com Subversion pelo Terminal
+    > Comando para criação de diretório e um repositório:
+      ```
+      mkdir -p repositórios
+      svnadmin create repositorios/projeto-x
+      ```    
+
+    > Comando para copiar um repositóriio e criar cópia e trabalho:
+      ```
+      svn checkout file:///urldorepositorio/projetox destino/projeto-x
+      cd projeto-x
+      ```    
+
+    > Comando para infomações locais do repositórios:
+      ```
+      svn info
+      ```
+
+    > Comando para criação de estrutura de um reposítorio padrão SVN:
+      ```
+      svn mkdir trunk branches tags
+      ```
+
+    > Comando para mostrar situação do diretório de trabalho:
+      ```
+      svn status 
+      ```
+
+    > Comando para atualização e updates no repositório.:
+      ```
+      svn add *
+      svn commit -m "Mensagem de informação."
+      ```
+
+    > Comando para checar as diferenças entre um arquivo no repositório e o arquivo modificado local:
+      ```
+      svn diff
+      ```
+
+    > Comando para remoção de um arquivo:
+      ```
+      svn rm nomedoarquivo.txt
+
+      # ou
+
+      svn del nomedoarquivo.txt
+      ```
+
+    > Comando para cópia:
+      ```
+      svn cp arquivoinicial.txt novoarquivo.txt
+      ```
+
+    > Comando para renomear e mover:
+      ```
+      svn mv arquivoinicial.txt novoarquivomovido.txt
+      ```
+
+    > Comando para atualizar a pasta local com a do repositório:
+      ```
+      svn update
+      ```
+
 
   - 09 - Operações Básicas de Controle de Versão com Subversion pelo TortoiseSVN
 
@@ -93,3 +161,4 @@
 ## Seção 7: Conclusão
 
   - 15 - Conclusão do Módulo 1
+
